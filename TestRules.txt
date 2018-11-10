@@ -1,0 +1,13 @@
+TableName;RuleNum;KeyType;Style;Columns;Confidence;Weihgt
+t_sales;1;DK;EVEN;;100;5000;
+t_sales;2;DK;KEY;store_id;100;8000;
+t_sales;3;DK;;;0;0;
+t_sales;4;DK;EVEN;;1;60;
+t_sales;4;DK;EVEN;;1;60;
+t_sales;5;DK;;;0;0;
+t_sales;1;SK;;;100;5000;
+t_sales;2;SK;COMPOUND;sku_cd, store_id, cust_id;100;6000;
+t_sales;3;SK;;;0;0;
+t_sales;4;SK;COMPOUND;cust_id, store_id;50;4000;
+t_sales;4;SK;COMPOUND;store_id, cust_id;50;4000;
+t_sales;5;SK;;;0;0;
