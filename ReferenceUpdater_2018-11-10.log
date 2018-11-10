@@ -1,0 +1,98 @@
+23:14:16: Done: Line was successfully read
+23:14:16: Done: Line was read: TableName;RuleNum;KeyType;Style;Columns;Confidence;Weihgt
+23:14:16: Done: Line was read: t_sales;1;DK;EVEN;;100;5000
+23:14:16: Done: Line was read: t_sales;2;DK;KEY;store_id;100;8000
+23:14:16: Done: Line was read: t_sales;3;DK;;;0;0
+23:14:16: Done: Line was read: t_sales;4;DK;EVEN;;1;60
+23:14:16: Done: Line was read: t_sales;4;DK;EVEN;;1;60
+23:14:16: Done: Line was read: t_sales;5;DK;;;0;0
+23:14:16: Done: Line was read: t_sales;1;SK;;;100;5000
+23:14:16: Done: Line was read: t_sales;2;SK;COMPOUND;sku_cd, store_id, cust_id;100;6000;
+23:14:16: Done: Line was read: t_sales;3;SK;;;0;0
+23:14:16: Done: Line was read: t_sales;4;SK;COMPOUND;cust_id, store_id;50;4000
+23:14:16: Done: Line was read: t_sales;4;SK;COMPOUND;store_id, cust_id;50;4000
+23:14:16: Done: Line was read: t_sales;5;SK;;;0;0
+23:14:16: Done: File TestRules.txt was read successfully
+23:15:47: Done: Line was successfully read
+23:15:47: Done: Line was read: t_sales;1;DK;EVEN;;100;5000
+23:15:47: Done: Line was read: t_sales;2;DK;KEY;store_id;100;8000
+23:15:47: Done: Line was read: t_sales;3;DK;;;0;0
+23:15:47: Done: Line was read: t_sales;4;DK;EVEN;;1;60
+23:15:47: Done: Line was read: t_sales;4;DK;EVEN;;1;60
+23:15:47: Done: Line was read: t_sales;5;DK;;;0;0
+23:15:47: Done: Line was read: t_sales;1;SK;;;100;5000
+23:15:47: Done: Line was read: t_sales;2;SK;COMPOUND;sku_cd, store_id, cust_id;100;6000;
+23:15:47: Done: Line was read: t_sales;3;SK;;;0;0
+23:15:47: Done: Line was read: t_sales;4;SK;COMPOUND;cust_id, store_id;50;4000
+23:15:47: Done: Line was read: t_sales;4;SK;COMPOUND;store_id, cust_id;50;4000
+23:15:47: Done: Line was read: t_sales;5;SK;;;0;0
+23:15:47: Done: File TestRules.txt was read successfully
+23:29:42: Done: Line was successfully read
+23:29:43: Done: Line was read: t_sales;1;DK;EVEN;;100;5000
+23:29:43: Done: Line was read: t_sales;2;DK;KEY;store_id;100;8000
+23:29:43: Done: Line was read: t_sales;3;DK;;;0;0
+23:29:43: Done: Line was read: t_sales;4;DK;EVEN;;1;60
+23:29:43: Done: Line was read: t_sales;4;DK;EVEN;;1;60
+23:29:43: Done: Line was read: t_sales;5;DK;;;0;0
+23:29:43: Done: Line was read: t_sales;1;SK;;;100;5000
+23:29:43: Done: Line was read: t_sales;2;SK;COMPOUND;sku_cd, store_id, cust_id;100;6000;
+23:29:43: Done: Line was read: t_sales;3;SK;;;0;0
+23:29:43: Done: Line was read: t_sales;4;SK;COMPOUND;cust_id, store_id;50;4000
+23:29:43: Done: Line was read: t_sales;4;SK;COMPOUND;store_id, cust_id;50;4000
+23:29:43: Done: Line was read: t_sales;5;SK;;;0;0
+23:29:43: Done: File TestRules.txt was read successfully
+23:29:52: Done: Table t_sales was created
+23:29:52: Done: Rule 2;DK;KEY;store_id;100;8000 was added to table t_sales
+23:29:52: Done: Rule 3;DK;;;0;0 was added to table t_sales
+23:29:52: Done: Rule 4;DK;EVEN;;1;60 was added to table t_sales
+23:29:52: Done: Rule 4;DK;EVEN;;1;60 was added to table t_sales
+23:29:52: Done: Rule 5;DK;;;0;0 was added to table t_sales
+23:29:52: Done: Rule 1;SK;;;100;5000 was added to table t_sales
+23:31:21: Done: Line was successfully read
+23:31:21: Done: Line was read: t_sales;1;DK;EVEN;;100;5000
+23:31:21: Done: Line was read: t_sales;2;DK;KEY;store_id;100;8000
+23:31:21: Done: Line was read: t_sales;3;DK;;;0;0
+23:31:21: Done: Line was read: t_sales;4;DK;EVEN;;1;60
+23:31:21: Done: Line was read: t_sales;4;DK;EVEN;;1;60
+23:31:21: Done: Line was read: t_sales;5;DK;;;0;0
+23:31:21: Done: Line was read: t_sales;1;SK;;;100;5000
+23:31:21: Done: Line was read: t_sales;2;SK;COMPOUND;sku_cd, store_id, cust_id;100;6000;
+23:31:21: Done: Line was read: t_sales;3;SK;;;0;0
+23:31:21: Done: Line was read: t_sales;4;SK;COMPOUND;cust_id, store_id;50;4000
+23:31:21: Done: Line was read: t_sales;4;SK;COMPOUND;store_id, cust_id;50;4000
+23:31:21: Done: Line was read: t_sales;5;SK;;;0;0
+23:31:21: Done: File TestRules.txt was read successfully
+23:31:21: Done: Table t_sales was created
+23:31:21: Done: Rule 2;DK;KEY;store_id;100;8000 was added to table t_sales
+23:31:21: Done: Rule 3;DK;;;0;0 was added to table t_sales
+23:31:21: Done: Rule 4;DK;EVEN;;1;60 was added to table t_sales
+23:31:21: Done: Rule 4;DK;EVEN;;1;60 was added to table t_sales
+23:31:21: Done: Rule 5;DK;;;0;0 was added to table t_sales
+23:31:21: Done: Rule 1;SK;;;100;5000 was added to table t_sales
+23:31:21: Done: Rule 2;SK;COMPOUND;sku_cd, store_id, cust_id;100;6000; was added to table t_sales
+23:31:21: Done: Rule 3;SK;;;0;0 was added to table t_sales
+23:31:21: Done: Rule 4;SK;COMPOUND;cust_id, store_id;50;4000 was added to table t_sales
+23:31:21: Done: Rule 4;SK;COMPOUND;store_id, cust_id;50;4000 was added to table t_sales
+23:31:21: Done: Rule 5;SK;;;0;0 was added to table t_sales
+23:54:20: Done: Line was successfully read
+23:54:20: Error: Read string has wrong format: TableName;RuleNum;KeyType;Style;Columns;Confidence;Weihgt
+23:54:20: Done: Line was read: t_sales;1;DK;EVEN;;100;5000;
+23:54:20: Done: Line was read: t_sales;2;DK;KEY;store_id;100;8000;
+23:54:20: Error: Read string has wrong format: t_sales;3;DK;;;0;0;
+23:54:20: Done: Line was read: t_sales;4;DK;EVEN;;1;60;
+23:54:20: Done: Line was read: t_sales;4;DK;EVEN;;1;60;
+23:54:20: Error: Read string has wrong format: t_sales;5;DK;;;0;0;
+23:54:20: Error: Read string has wrong format: t_sales;1;SK;;;100;5000;
+23:54:20: Done: Line was read: t_sales;2;SK;COMPOUND;sku_cd, store_id, cust_id;100;6000;
+23:54:20: Error: Read string has wrong format: t_sales;3;SK;;;0;0;
+23:54:20: Done: Line was read: t_sales;4;SK;COMPOUND;cust_id, store_id;50;4000;
+23:54:20: Done: Line was read: t_sales;4;SK;COMPOUND;store_id, cust_id;50;4000;
+23:54:20: Error: Read string has wrong format: t_sales;5;SK;;;0;0;
+23:54:20: Done: File TestRules.txt was read successfully
+23:54:20: Done: Table t_sales was created
+23:54:20: Done: Rule 2;DK;KEY;store_id;100;8000; was added to table t_sales
+23:54:20: Done: Rule 4;DK;EVEN;;1;60; was added to table t_sales
+23:54:20: Done: Rule 4;DK;EVEN;;1;60; was added to table t_sales
+23:54:20: Done: Rule 2;SK;COMPOUND;sku_cd, store_id, cust_id;100;6000; was added to table t_sales
+23:54:20: Done: Rule 4;SK;COMPOUND;cust_id, store_id;50;4000; was added to table t_sales
+23:54:20: Done: Rule 4;SK;COMPOUND;store_id, cust_id;50;4000; was added to table t_sales
