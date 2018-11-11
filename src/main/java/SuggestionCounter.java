@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 import static stringconstant.LoggerMessages.RULE_WAS_ADDED_TO_TABLE;
 import static stringconstant.LoggerMessages.TABLE_WAS_CREATED;
@@ -13,7 +15,8 @@ public class SuggestionCounter {
 
         //Read file with single rules
         ReadFile reader = new ReadFile();
-        ArrayList<String> linesList = new ArrayList<String>(reader.readFile(filePath));
+        Set<String> lineSet = new HashSet<>(reader.readFile(filePath));
+        ArrayList<String> linesList = new ArrayList<String>(lineSet);
 
         //Get tables arrays
         ArrayList<Table> tablesList = new ArrayList<Table>();
@@ -29,7 +32,7 @@ public class SuggestionCounter {
                 int idx = result.indexOf(tempTable);
                 String keyInfo = (line.split(SEMICOLON, 2))[1];
                 result.get(idx).addKey(keyInfo);
-                Logger.setLog(String.format(RULE_WAS_ADDED_TO_TABLE,keyInfo,tempTable.getName()));
+                Logger.setLog(String.format(RULE_WAS_ADDED_TO_TABLE, keyInfo, tempTable.getName()));
 
             } else {
                 result.add(tempTable);

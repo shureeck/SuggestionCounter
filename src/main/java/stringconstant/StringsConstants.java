@@ -8,6 +8,7 @@ public class StringsConstants {
     public static final String LOG = ".log";
     public static final String COLON = ": ";
     public static final String SEMICOLON = ";";
+    public static final String COMA = ",";
 
     public static final String INPUT_PATH_TO_FILE_WITH_RULES = "Specify the path to the file with single rules";
 
