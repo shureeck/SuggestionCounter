@@ -22,6 +22,11 @@ public class SuggestionCounter {
         ArrayList<Table> tablesList = new ArrayList<Table>();
         tablesList.addAll(getTableList(linesList));
 
+        String rules = "rule1,rule2,rule4";
+
+        Calculator calculator = new Calculator();
+        calculator.getSuggestions(tablesList.get(0), rules);
+
     }
 
     public ArrayList<Table> getTableList(ArrayList<String> linesList) {

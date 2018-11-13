@@ -19,5 +19,11 @@ public class LoggerMessages {
     public static final String RULE_WAS_ADDED_TO_TABLE = DONE + "Rule %s was added to table %s";
     public static final String STRING_EMPTY = WARNING + "The string is empty";
     public static final String STRING_HAS_WRONG_FORMAT = ERROR + "Read string has wrong format: ";
+    public static final String SUGGESYION_CALCULATION_START = ">>Suggestions calculation for Table %s %s is started";
+    public static final String GOT_DK_FOR_CALCULATION = DONE + "Got Distribution Keys which will be used for calculation:";
+    public static final String GOT_SK_FOR_CALCULATION = DONE + "Got Sort Keys which will be used for calculation:";
+    public static final String KEY_ALREADY_EXISTS = DONE + "Key with columns %s already exists, add the Confidence of two keys";
+    public static final String COLUMNS_CONFIDENCE = "Columns: %s Confidence: %s";
+    public static final String KEY_WILL_BE_EXCLUDED = WARNING + "Key %s %s has to small confident (threshold=%s). It will be excluded from calculation.";
 
 }

@@ -1,11 +1,11 @@
 public class Key {
-    private int ruleNumber;
+    private double ruleNumber;
     private String dk_sk;
     private String style;
     private String columns;
-    private int weight;
+    private double weight;
 
-    public Key(int ruleNumber, String dk_sk, String style, String columns, int weight) {
+    public Key(double ruleNumber, String dk_sk, String style, String columns, double weight) {
         this.ruleNumber = ruleNumber;
         this.dk_sk = dk_sk;
         this.style = style;
@@ -21,7 +21,7 @@ public class Key {
         return dk_sk;
     }
 
-    public int getRule() {
+    public double getRule() {
         return ruleNumber;
     }
 
@@ -29,7 +29,7 @@ public class Key {
         return columns;
     }
 
-    public int getWeight() {
+    public double getWeight() {
         return weight;
     }
 

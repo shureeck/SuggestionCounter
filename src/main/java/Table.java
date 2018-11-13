@@ -15,8 +15,8 @@ public class Table {
 
     public void addKey(String keyInfo) {
         String[] tempArray = keyInfo.split(SEMICOLON);
-        int ruleNumber = Integer.parseInt(tempArray[0]);
-        int weight = Integer.parseInt(tempArray[5]);
+        double ruleNumber = Double.parseDouble(tempArray[0]);
+        double weight = Double.parseDouble(tempArray[5]);
         keysList.add(new Key(ruleNumber, tempArray[1], tempArray[2], tempArray[3], weight));
     }
 
@@ -34,7 +34,7 @@ public class Table {
         ArrayList<Key> result = new ArrayList<>();
 
         for (String rule : rulesArray) {
-            int ruleNumbTemp = Integer.parseInt(rule.substring(0, 3).trim());
+            int ruleNumbTemp = Integer.parseInt(rule.substring(4, rule.length()).trim());
             result.addAll(keysList.stream().filter((p) -> ((p.getRule() == ruleNumbTemp)) &&
                     (p.getType().equalsIgnoreCase(type)))
                     .collect(Collectors.toList()));

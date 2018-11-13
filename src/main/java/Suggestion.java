@@ -1,7 +1,7 @@
 import java.text.DecimalFormat;
 import java.util.Comparator;
 
-public class Suggestion implements Comparator {
+public class Suggestion implements Comparable {
     private String distributionKey;
     private String sortKey;
     private double confidence;
@@ -19,14 +19,14 @@ public class Suggestion implements Comparator {
 
     @Override
     public String toString() {
-        DecimalFormat format = new DecimalFormat("###,##");
-        return distributionKey + "," + sortKey + "," + format.format(confidence * 100) + ",";
+        DecimalFormat format = new DecimalFormat("#0.00");
+        return distributionKey + ",\"" + sortKey + "\"," + format.format(confidence * 100) + "%,";
     }
 
     @Override
-    public int compare(Object o1, Object o2) {
-        double conf1 = ((Suggestion) o1).getConfidence();
-        double conf2 = ((Suggestion) o2).getConfidence();
+    public int compareTo(Object o) {
+        double conf1 = ((Suggestion) o).getConfidence();
+        double conf2 = this.confidence;
         if (conf1 > conf2) {
             return 1;
         } else if (conf1 < conf2) {
