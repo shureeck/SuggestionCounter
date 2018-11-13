@@ -3,6 +3,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 import static stringconstant.StringsConstants.*;
@@ -11,12 +12,12 @@ import static stringconstant.StringsConstants.*;
  * Created by Poliakov.A on 12/11/2017.
  */
 public class Logger {
-    public static void setLog(String msg){
+    public static void setLog(String msg) {
         //Creating date-time formats
         Date date = new Date();
-        SimpleDateFormat formatDate = new SimpleDateFormat(DATE_FORMAT );
+        SimpleDateFormat formatDate = new SimpleDateFormat(DATE_FORMAT);
         SimpleDateFormat formatTime = new SimpleDateFormat(TIME_FORMAT);
-        String logName = REFERENCE_UPDATER + formatDate.format(date)+LOG;
+        String logName = REFERENCE_UPDATER + formatDate.format(date) + LOG;
         File log = new File(logName);
 
         //Create new file if not exist
@@ -24,59 +25,61 @@ public class Logger {
             if (!log.exists()) {
                 log.createNewFile();
             }
-        }
-        catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
         //Write data in .log file
-        BufferedWriter writer=null;
+        BufferedWriter writer = null;
         try {
             System.out.println(msg);
-            writer =new BufferedWriter(new FileWriter(log, true));
-            writer.write(formatTime.format(date)+COLON+msg+'\n');
+            writer = new BufferedWriter(new FileWriter(log, true));
+            writer.write(formatTime.format(date) + COLON + msg + '\n');
         }//try
-        catch (IOException e){
+        catch (IOException e) {
             e.printStackTrace();
         }//catch
         finally {
             try {
                 writer.close();
-            }
-            catch (IOException e){
+            } catch (IOException e) {
                 e.printStackTrace();
             }
         }//finally
     }
 
-    public static void appendToTestlist(File testlist,String line){
+    public static void writeFile(File outputFile, String line) {
         //Creating date-time formats
         //Create new file if not exist
         try {
-            if (! testlist.exists()) {
-                testlist.createNewFile();
+            if (!outputFile.exists()) {
+                outputFile.createNewFile();
             }
-        }
-        catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
         //Write data in .log file
-        BufferedWriter writer=null;
+        BufferedWriter writer = null;
         try {
-            writer =new BufferedWriter(new FileWriter( testlist, true));
-            writer.write(line+'\n');
+            writer = new BufferedWriter(new FileWriter(outputFile, true));
+            writer.write(line + '\n');
         }//try
-        catch (IOException e){
+        catch (IOException e) {
             e.printStackTrace();
         }//catch
         finally {
             try {
                 writer.close();
-            }
-            catch (IOException e){
+            } catch (IOException e) {
                 e.printStackTrace();
             }
         }//finally
+    }
+
+    public static void writeFile(File outputFile, ArrayList<String> list) {
+        for (String line : list){
+            writeFile(outputFile, line);
+        }
     }
 }

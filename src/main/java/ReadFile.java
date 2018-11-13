@@ -9,7 +9,7 @@ import static stringconstant.StringsConstants.*;
  */
 public class ReadFile {
 
-    public ArrayList<String> readFile(String path) {
+    public ArrayList<String> readFile(String path, String pattern) {
         ArrayList<String> result = new ArrayList<String>();
         FileReader sc = null;
         BufferedReader buffer = null;
@@ -22,7 +22,7 @@ public class ReadFile {
 
                 while (line != null) {
                     line.replaceAll(UNVISIBLE_u202A, EMPTY);
-                    if (line.trim().matches(TESTLIST_STRING_FORMAT)) {
+                    if (line.trim().matches(pattern)) {
                         result.add(line);
                         Logger.setLog(LINE_READ + line);
                     } else {

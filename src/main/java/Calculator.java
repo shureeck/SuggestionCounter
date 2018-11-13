@@ -121,7 +121,7 @@ public class Calculator {
         sortedSuggestion.addAll(suggestionList.stream().sorted().collect(Collectors.toList()));
         int i = 1;
         for (Suggestion suggestion : sortedSuggestion) {
-            result.add(table.getName() + String.valueOf(i) + "," + "," + suggestion.toString());
+            result.add(table.getName() + "," + String.valueOf(i) + "," + suggestion.toString());
             Logger.setLog(table.getName() + "," + String.valueOf(i) + "," + suggestion.toString());
             i++;
         }
