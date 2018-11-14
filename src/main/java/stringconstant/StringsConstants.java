@@ -11,7 +11,7 @@ public class StringsConstants {
     public static final String COMA = ",";
 
     public static final String INPUT_PATH_TO_FILE_WITH_RULES = "Specify the path to the file with single rules";
-    public static final String INPUT_PATH_TO_RULE_COLLECTION = "Input path to rule collection";
+    public static final String INPUT_PATH_TO_RULE_COLLECTION = "Specify path to rules combination";
 
     public static final String DATE_FORMAT = "y-M-d";
     public static final String TIME_FORMAT = "HH:mm:ss";

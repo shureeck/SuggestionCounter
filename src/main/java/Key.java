@@ -33,5 +33,18 @@ public class Key {
         return weight;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        boolean result = ((Key) obj).getRule() == ruleNumber &&
+                ((Key) obj).getColumns().equalsIgnoreCase(columns) &&
+                ((Key) obj).getType().equalsIgnoreCase(dk_sk) &&
+                ((Key) obj).getWeight() == weight;
+        return result;
+    }
+
+    @Override
+    public int hashCode() {
+        return getType().hashCode() + getColumns().hashCode() +((int) (ruleNumber + weight));
+    }
 }
 
