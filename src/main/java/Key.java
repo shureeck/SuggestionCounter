@@ -9,7 +9,7 @@ public class Key {
         this.ruleNumber = ruleNumber;
         this.dk_sk = dk_sk;
         this.style = style;
-        if (columns.isEmpty() && (style.equalsIgnoreCase("all") || style.equalsIgnoreCase("even"))) {
+        if (columns.isEmpty() && (style.equalsIgnoreCase("all") || style.equalsIgnoreCase("even") || style.equalsIgnoreCase("auto"))) {
             this.columns = style;
         } else {
             this.columns = columns;
@@ -32,6 +32,8 @@ public class Key {
     public double getWeight() {
         return weight;
     }
+
+    public String getStyle(){return style;}
 
     @Override
     public boolean equals(Object obj) {

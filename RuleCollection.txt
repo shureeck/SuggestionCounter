@@ -16,10 +16,10 @@ Rule1,Rule2,Rule5
 Rule1,Rule3,Rule4,Rule5
 Rule1,Rule3,Rule5
 Rule1,Rule4,Rule5
-Rule2,Rulе3,Rule4,Rule5
-Rule2,Rulе3,Rule5
-Rule2,Rulе4,Rule5
-Rule3,Rulе4,Rule5
+Rule2,Rule3,Rule4,Rule5
+Rule2,Rule3,Rule5
+Rule2,Rule4,Rule5
+Rule3,Rule4,Rule5
 Rule1,Rule5
 Rule2,Rule5
 Rule3,Rule5
